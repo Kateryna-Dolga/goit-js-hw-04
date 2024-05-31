@@ -10,7 +10,7 @@ div{
 h1{
 color: rgb(255, 140, 0);
 text-align: center;
-font-size: 58px;
+font-size: 48px;
 margin: 50px;
 
 }
@@ -23,9 +23,10 @@ a{
     text-decoration: none;
 }
 
-h2{
+h2{ color: rgb(74, 74, 74);
     margin-bottom: 50px;
-    font-size: 40px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .main-content{
@@ -41,14 +42,14 @@ h2{
 flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 5px;
     margin: 20px;
 }
 .menu-a{
     color: rgb(255, 140, 0);
 border-radius: 10px;
     display: block;
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(255, 140, 0);
@@ -58,7 +59,7 @@ border-radius: 10px;
     color: white;
 }
 .small-menu-ul{
-min-width: 80px;
+min-width: 70px;
     position: absolute;
     display: none;
 }
@@ -77,7 +78,7 @@ display: initial;
         border-radius: 10px;
      display: block;
         font-size: 14px;
-        padding: 10px;
+        padding: 7px;
         background-color: rgb(255, 255, 255);
         border: 1px solid rgb(255, 140, 0);
 }
@@ -97,12 +98,19 @@ display: initial;
 .foto-content{
     display: flex;
 }
+
+.content pre{
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgb(50, 50, 50);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 .exersice{
     padding: 50px;
     width: 900px;
     background-color: rgb(247, 247, 247);
     border-radius: 20px;
-    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.319);
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.152);
     margin-bottom: 50px;
 }
 .solution{
@@ -110,7 +118,8 @@ padding: 50px;
     width: 900px;
     background-color: rgb(247, 247, 247);
     border-radius: 20px;
-    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.319);
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.152);
+        margin-bottom: 50px;
     margin-bottom: 50px;
 }
 .result{
@@ -118,7 +127,8 @@ padding: 50px;
     width: 900px;
     background-color: rgb(247, 247, 247);
     border-radius: 20px;
-    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.319);
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.152);
+        margin-bottom: 50px;
      margin-bottom: 50px;
 }
 .orange {

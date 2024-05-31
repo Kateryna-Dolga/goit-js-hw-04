@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<title>JS-GO-IT-HW-1</title>
+</head>
+<body>
+
+    <!------------------------logo----------------------------------------------------------------->
+    <div class="logo">
+            <h1>GOIT JavaScript - 107 </h1>
+    </div><!------------------------/logo----------------------------------------------------------------->
+
+<!------------------------main-content----------------------------------------------------------------->
+<div class="main-content">
+
+<!------------------------menu---------------------------------------------------------------->
+<div class="menu">
+
+<nav class="menu">
+    <ul class="menu-ul">
+        <li class="menu-li"><a href="" class="menu-a">Homework-1</a>
+        <ul class="small-menu-ul">
+            <li class="small-menu-li"><a href="" class="small-menu-a">task-1</a></li>
+            <li class="small-menu-li"><a href="" class="small-menu-a">task-2</a></li>
+            <li class="small-menu-li"><a href="" class="small-menu-a">task-3</a></li>
+        </ul>
+        </li>
+        <li class="menu-li"><a href="" class="menu-a">Homework-2</a>
+        <ul class="small-menu-ul">
+            <li class="small-menu-li"><a href="" class="small-menu-a">task-1</a></li>
+            <li class="small-menu-li"><a href="" class="small-menu-a">task-2</a></li>
+            <li class="small-menu-li"><a href="" class="small-menu-a">task-3</a></li>
+            <li class="small-menu-li"><a href="" class="small-menu-a">task-4</a></li>
+        </ul>
+        </li>
+        <li class="menu-li"><a href="" class="menu-a">Homework-3</a>
+        <ul class="small-menu-ul">
+            <li class="small-menu-li"><a href="" class="small-menu-a">task-1</a></li>
+            <li class="small-menu-li"><a href="" class="small-menu-a">task-2</a></li>
+            <li class="small-menu-li"><a href="" class="small-menu-a">task-3</a></li>
+        </ul>
+        </li>
+        <li class="menu-li"><a href="" class="menu-a orange">Homework-4</a>
+        <ul class="small-menu-ul">
+            <li class="small-menu-li"><a href="" class="small-menu-a">task-1</a></li>
+            <li class="small-menu-li"><a href="" class="small-menu-a">task-2</a></li>
+            <li class="small-menu-li"><a href="" class="small-menu-a">task-3</a></li>
+        </ul>
+        </li>
+        <li class="menu-li"><a href="" class="menu-a">Homework-5</a></li>
+        <li class="menu-li"><a href="" class="menu-a">Homework-6</a></li>
+        <li class="menu-li"><a href="" class="menu-a">Homework-7</a></li>
+        <li class="menu-li"><a href="" class="menu-a">Homework-8</a></li>
+        <li class="menu-li"><a href="" class="menu-a">Homework-9</a></li>
+        <li class="menu-li"><a href="" class="menu-a">Homework-10</a></li>
+        <li class="menu-li"><a href="" class="menu-a">Homework-11</a></li>
+        <li class="menu-li"><a href="" class="menu-a">Homework-12</a></li>
+    </ul>
+</nav>
+</div><!------------------------/menu---------------------------------------------------------------->
+<!------------------------foto-content--------------------------------------------------------------->
+<div class="foto-content">
+<!------------------------foto------------------------------------------------------------------->
+<div class="foto">
+<img class="cat-it" width="260" src="./img/js.jpg" alt="it-cat">
+</div><!------------------------foto----------------------------------------------------------------->
+<!------------------------content----------------------------------------------------------------->
+<div class="content">
+<!------------------------exersice----------------------------------------------------------------->
+<div class="exersice">
+<h2>Задача 1. Пакування товарів</h2>
+<p><pre>ИКОНУЙ ЦЕ ЗАВДАННЯ У ФАЙЛІ task-1.js
+Напиши функцію isEnoughCapacity(products, containerSize), яка обчислює, чи помістяться всі товари в контейнер при
+пакуванні.
+
+Функція оголошує два параметри:
+
+products — об’єкт, у якому ключі містять назви товарів, а їхні значення — кількість цих товарів. Наприклад, { apples: 2,
+grapes: 4 }.
+containerSize — число, максимальна кількість одиниць товарів, яку в себе може вмістити контейнер.
+Функція має повернути результат перевірки, чи помістяться всі товари в контейнер. Тобто порахувати загальну кількість
+товарів в об’єкті products і повернути true, якщо вона менше або дорівнює containerSize, і false, якщо ні.
+
+Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені
+результати її викликів.
+
+console.log(
+isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)
+); // true
+
+console.log(
+isEnoughCapacity({ apples: 4, grapes: 6, lime: 16 }, 12)
+); // false
+
+console.log(
+isEnoughCapacity({ apples: 1, lime: 5, tomatoes: 3 }, 14)
+); // true
+
+console.log(
+isEnoughCapacity({ apples: 18, potatoes: 5, oranges: 2 }, 7)
+); // false
+
+Залиш цей код для перевірки ментором.</pre></p>
+</div><!------------------------/exersice----------------------------------------------------------------->
+<!------------------------Solution----------------------------------------------------------------->
+<div class="solution">
+    <h2>Рішення:</h2>
+<p><pre>function slugify(title) {
+const slug = title.toLowerCase().split(" ").join("-");
+return slug;
+}
+
+
+console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
+console.log(slugify("English for developer")); // "english-for-developer"
+console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
+console.log(slugify("How to become a JUNIOR developer in TWO WEEKS")); //
+"how-to-become-a-junior-developer-in-two-weeks"
+</pre>
+</p>
+</div><!------------------------/solution----------------------------------------------------------------->
+<!------------------------result----------------------------------------------------------------->
+<div class="result">
+    <h2>Результат:</h2>
+    <p>
+    <pre>
+console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
+console.log(slugify("English for developer")); // "english-for-developer"
+console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
+console.log(slugify("How to become a JUNIOR developer in TWO WEEKS")); //
+"how-to-become-a-junior-developer-in-two-weeks"
+</pre>
+</p>
+</div><!------------------------/result----------------------------------------------------------------->
+
+</div><!------------------------/content----------------------------------------------------------------->
+</div><!------------------------/foto-content---------------------------------------------------------------->
+</div><!------------------------/main-content----------------------------------------------------------------->
+<!------------------------footer----------------------------------------------------------------->
+<div class="footer">
+<ul class="footer-menu-ul">
+    <li class="footer-menu-li">
+        <a class="footer-menu-a">
+            Homework-1
+        </a>
+    </li>
+    <li class="footer-menu-li">
+        <a class="footer-menu-a">
+            Homework-2
+        </a>
+    </li>
+    <li class="footer-menu-li">
+        <a class="footer-menu-a">
+            Homework-3
+        </a>
+    </li>
+    <li class="footer-menu-li">
+        <a class="footer-menu-a orange-footer">
+            Homework-4
+        </a>
+    </li>
+    <li class="footer-menu-li">
+        <a class="footer-menu-a">
+            Homework-5
+        </a>
+    </li>
+    <li class="footer-menu-li">
+        <a class="footer-menu-a">
+            Homework-6
+        </a>
+    </li>
+    <li class="footer-menu-li">
+        <a class="footer-menu-a">
+            Homework-7
+        </a>
+    </li>
+    <li class="footer-menu-li">
+        <a class="footer-menu-a">
+            Homework-8
+        </a>
+    </li>
+    <li class="footer-menu-li">
+        <a class="footer-menu-a">
+            Homework-9
+        </a>
+    </li>
+    <li class="footer-menu-li">
+        <a class="footer-menu-a">
+            Homework-10
+        </a>
+    </li>
+    <li class="footer-menu-li">
+        <a class="footer-menu-a">
+            Homework-11
+        </a>
+    </li>
+    <li class="footer-menu-li">
+        <a class="footer-menu-a">
+            Homework-12
+        </a>
+    </li>
+</ul>
+<!------------------------footer-info----------------------------------------------------------------->
+<div class="footer-info">
+    <p>Kateryna Dolga</p>
+    <p>GOIT JavaScript - 107</p>
+    <p>email: july_info@ukr.net</p>
+    <p>tel: 067-176-1313</p>
+    <div><!------------------------/footer-info----------------------------------------------------------------->
+</div><!------------------------/footer----------------------------------------------------------------->
+
+</body>
+</html>

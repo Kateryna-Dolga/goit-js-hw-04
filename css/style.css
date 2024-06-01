@@ -1,5 +1,5 @@
 div{
-    borde: 1px solid black;
+    borer: 1px solid black;
 }
 
 *{
@@ -36,8 +36,9 @@ h2{ color: rgb(74, 74, 74);
 .foto-content{
     margin-top: 50px;
 }
+
 .menu-ul{
-    
+    z-index: 190;
   display: flex;
 flex-direction: row;
     flex-wrap: wrap;
@@ -46,6 +47,7 @@ flex-direction: row;
     margin: 20px;
 }
 .menu-a{
+    transition: all 0.5s ease;
     color: rgb(255, 140, 0);
 border-radius: 10px;
     display: block;
@@ -57,8 +59,10 @@ border-radius: 10px;
 .menu-a:hover{
     background-color: rgb(255, 140, 0);
     color: white;
+    transition-delay: 0.2s;
 }
 .small-menu-ul{
+    z-index: 191;
 min-width: 100px;
     position: absolute;
     display: none;
@@ -72,6 +76,7 @@ display: initial;
 
 
 .small-menu-a{
+    transition: all 0.8s ease;
     width: 100%;
     text-align: center;
     color: rgb(255, 140, 0);
@@ -89,10 +94,16 @@ display: initial;
         
 }
 
-
+.content{
+    z-index: 130;
+}
 .cat-it{
+    
     display: inline-block;
     border-radius: 50%;
+    position: relative;
+    left: 30px;
+    z-index: 101;
 }
 
 .foto-content{
@@ -191,4 +202,7 @@ display: flex;
     padding: 20px;
   
     margin: 0 auto;
+}
+.footer-line{
+    border-left: 1px solid white;
 }

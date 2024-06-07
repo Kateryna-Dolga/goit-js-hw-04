@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
 <title>JS-GO-IT-HW-1</title>
 </head>
 <body>
@@ -44,11 +44,11 @@
         </ul>
         </li>
         <li class="menu-li"><a href="" class="menu-a orange">Homework-4</a>
-        <ul class="small-menu-ul">
-            <li class="small-menu-li"><a href="./hw-4/task-1.html" class="small-menu-a">task-1</a></li>
-            <li class="small-menu-li"><a href="./hw-4/task-2.html" class="small-menu-a">task-2</a></li>
-            <li class="small-menu-li"><a href="./hw-4/task-3.html" class="small-menu-a">task-3</a></li>
-        </ul>
+            <ul class="small-menu-ul">
+                <li class="small-menu-li"><a href="task-1.html" class="small-menu-a">task-1</a></li>
+                <li class="small-menu-li"><a href="task-2.html" class="small-menu-a">task-2</a></li>
+                <li class="small-menu-li"><a href="task-3.html" class="small-menu-a">task-3</a></li>
+            </ul>
         </li>
         <li class="menu-li"><a href="" class="menu-a">Homework-5</a></li>
         <li class="menu-li"><a href="" class="menu-a">Homework-6</a></li>
@@ -65,80 +65,82 @@
 <div class="foto-content">
 <!------------------------foto------------------------------------------------------------------->
 <div class="foto">
-<img class="cat-it" width="260" src="./img/js.jpg" alt="it-cat">
+<img class="cat-it" width="260" src="../img/js.jpg" alt="it-cat">
 </div><!------------------------foto----------------------------------------------------------------->
 <!------------------------content----------------------------------------------------------------->
 <div class="content">
 <!------------------------exersice----------------------------------------------------------------->
 <div class="exersice">
-<h2>Задача 1. Пакування товарів</h2>
-<p><pre>
-ВИКОНУЙ ЦЕ ЗАВДАННЯ У ФАЙЛІ task-1.js
-Напиши функцію isEnoughCapacity(products, containerSize), яка обчислює, чи помістяться всі 
-товари в контейнер при пакуванні.
+<h2>Задача 3. Профіль гравця</h2>
+<p><pre>ВИКОНУЙ ЦЕ ЗАВДАННЯ У ФАЙЛІ task-3.js
+Об’єкт profile описує профіль користувача на ігровій платформі. У його властивостях зберігається 
+ім’я профілю username та кількість активних годин playTime, проведених у грі.
 
-Функція оголошує два параметри:
+const profile = {
+username: "Jacob",
+playTime: 300,
+};
 
-products — об’єкт, у якому ключі містять назви товарів, а їхні значення — кількість цих товарів. 
-Наприклад, { apples: 2, grapes: 4 }.
-containerSize — число, максимальна кількість одиниць товарів, яку в себе може вмістити контейнер.
-Функція має повернути результат перевірки, чи помістяться всі товари в контейнер. 
-Тобто порахувати загальну кількість товарів в об’єкті products і повернути true, 
-якщо вона менше або дорівнює containerSize, і false, якщо ні.
+Доповни об’єкт profile методами для роботи з його властивостями.
+
+Метод changeUsername(newName) повинен приймати рядок (нове ім’я) в параметр newName 
+та змінювати значення властивості username на нове. Нічого не повертає.
+
+Метод updatePlayTime(hours) повинен приймати число (кількість годин) у параметр hours 
+та збільшити на нього значення властивості playTime. Нічого не повертає.
+
+Метод getInfo() має повертати рядок формату <Username> has <amount> active hours!, де <Username> 
+    — це ім’я профілю, а<amount> — кількість ігрових годин.
 
 Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. 
-У консоль будуть виведені результати її викликів.
+У консоль будуть виведені результати її роботи.
 
-console.log(
-isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)
-); // true
 
-console.log(
-isEnoughCapacity({ apples: 4, grapes: 6, lime: 16 }, 12)
-); // false
+console.log(profile.getInfo()); // "Jacob has 300 active hours!"
 
-console.log(
-isEnoughCapacity({ apples: 1, lime: 5, tomatoes: 3 }, 14)
-); // true
+profile.changeUsername("Marco");
+console.log(profile.getInfo()); // "Marco has 300 active hours!"
 
-console.log(
-isEnoughCapacity({ apples: 18, potatoes: 5, oranges: 2 }, 7)
-); // false
+profile.updatePlayTime(20);
+console.log(profile.getInfo()); // "Marco has 320 active hours!"
 
 Залиш цей код для перевірки ментором.
 
+                
 На що буде звертати увагу ментор при перевірці:
-Оголошена функція isEnoughCapacity(products, containerSize)
-Виклик isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8) повертає true
-Виклик isEnoughCapacity({ apples: 4, grapes: 6, lime: 16 }, 12) повертає false
-Виклик isEnoughCapacity({ apples: 1, lime: 5, tomatoes: 3 }, 14) повертає true
-Виклик isEnoughCapacity({ apples: 18, potatoes: 5, oranges: 2 }, 7) повертає false</pre></p>
+                
+Оголошена змінна profile           
+Значення змінної profile — це об’єкт з властивостями username, playTime, getInfo, 
+changeUsername і updatePlayTime
+Значення властивості getInfo — це функція
+Значення властивості changeUsername — це функція
+Значення властивості updatePlayTime — це функція
+Для звернення до властивостей об’єкта в його методах використовується this</pre></p>
 </div><!------------------------/exersice----------------------------------------------------------------->
 <!------------------------Solution----------------------------------------------------------------->
 <div class="solution">
     <h2>Рішення:</h2>
-<p><pre>function isEnoughCapacity(products, containerSize) {
-let totalProducts = 0;
-
-for (let product in products) {
-totalProducts = totalProducts + products[product];
+<p><pre>const profile = {
+username: "Jacob",
+playTime: 300,
+getInfo() {
+return `${this.username} has ${this.playTime} active hours!`;
+},
+changeUsername(newName) {
+this.username = newName;
+},
+updatePlayTime(hours) {
+this.playTime += hours;
 }
+};
 
-if (totalProducts <= containerSize) { 
-    return true; 
-} 
+console.log(profile.getInfo()); // "Jacob has 300 active hours!"
 
-else { 
-    return false; 
-} 
-}
+profile.changeUsername("Marco");
+console.log(profile.getInfo()); // "Marco has 300 active hours!"
 
-
-    console.log( isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8) ); // true 
-    console.log( isEnoughCapacity({apples: 4, grapes: 6, lime: 16 }, 12) ); // false 
-    console.log( isEnoughCapacity({ apples: 1, lime: 5, tomatoes: 3 },14) ); // true 
-    console.log( isEnoughCapacity({ apples: 18, potatoes: 5, oranges: 2 }, 7) ); // false
-
+profile.updatePlayTime(20);
+console.log(profile.getInfo()); // "Marco has 320 active hours!"
 </pre>
 </p>
 </div><!------------------------/solution----------------------------------------------------------------->
@@ -146,10 +148,11 @@ else {
 <div class="result">
     <h2>Результат:</h2>
     <p>
-    <pre>task-1.js:17 true
-task-1.js:21 false
-task-1.js:25 true
-task-1.js:29 false
+    
+<pre>
+    Jacob has 300 active hours!
+    Marco has 300 active hours!
+    Marco has 320 active hours!
 </pre>
 </p>
 </div><!------------------------/result----------------------------------------------------------------->
@@ -232,8 +235,8 @@ task-1.js:29 false
 
 
 
-<script src="./js/task-1.js"></script>
-<script src="./js/task-2.js"></script>
-<script src="./js/task-3.js"></script>
+<script src="../js/task-1.js"></script>
+<script src="../js/task-2.js"></script>
+<script src="../js/task-3.js"></script>
 </body>
 </html>

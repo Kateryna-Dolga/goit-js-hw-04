@@ -28,7 +28,14 @@ h2{ color: rgb(74, 74, 74);
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
+.logo-a{
+    cursor: pointer;
+    color: rgb(255, 140, 0);
+}
+.logo-a:hover{
+    color: rgb(255, 123, 0);
+  
+}
 .main-content{
     width: 1280px;
     margin: 0px auto;
